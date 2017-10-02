@@ -2,8 +2,8 @@
 title: "R Cheatsheet for WSR"
 author: "Klinkenberg"
 date: "7/5/2017"
-output: html_document
-# output: pdf_document
+# output: html_document
+output: pdf_document
 ---
 
 ## Intro
@@ -55,8 +55,8 @@ library("visualize");
 #### Resultaat visualize.t(2,16,"upper")
 
 ```{r,echo=TRUE,message=FALSE, warning=FALSE}
-library(visualize)
-visualize.t(2,16,"upper")
+library(visualize);
+visualize.t(2,16,"upper");
 ```
 
 ### Voorbeelden
@@ -65,10 +65,10 @@ visualize.t(2,16,"upper")
 
 
 ```{r}
-x1=c(5,3,7,4)
-x2=c(7,6,6,4)
-a=2
-b=c(1,2)
+x1=c(5,3,7,4);
+x2=c(7,6,6,4);
+a=2;
+b=c(1,2);
 
 ```
 
@@ -83,7 +83,7 @@ x1-x2
 Wanneer variabelen een verschillende lengte hebben worden de getallen / het getal van de kortste variabele herhaald zodat de lengte gelijk wordt aan die van de langere variabele 
 
 ```{r}
-x1-a
-x1-b
+x1-a;
+x1-b;
 ```
 
