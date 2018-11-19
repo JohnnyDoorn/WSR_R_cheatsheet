@@ -2,8 +2,9 @@
 title: "R Cheatsheet for WSR"
 author: "Klinkenberg"
 date: "7/5/2017"
-# output: html_document
-output: pdf_document
+output:
+  html_document:
+    df_print: paged
 ---
 
 ## Intro
@@ -52,7 +53,7 @@ if(!"visualize" %in% installed.packages()) { install.packages("visualize") };
 library("visualize");
 ```
 
-#### Resultaat visualize.t(2,16,"upper")
+#### Voorbeeld toepassing
 
 ```{r,echo=TRUE,message=FALSE, warning=FALSE}
 library(visualize);
