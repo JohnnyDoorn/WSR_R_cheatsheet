@@ -12,10 +12,10 @@ R can be used to do all kind of calculations and store the results in so called 
 
 ## Functions
 
-Symbool                    | R                                                   | Voorbeeld                         | Resultaat | Uitleg
+Symbol                    | R                                                   | Example                         | Result | Explanation
 ------------------------ | ------------------------- | --------------------------------     | --------------------  | -----------------
-  | =                   | a=9 | `r a=9` `r a` | Assign a number to a variable 
-        | c()                    | x=c(1,2,3)    | `r x=c(1,2,3)` `r x` | Assign multiple numbers to a variable 
+.  | =                   | a=9 | `r a=9` `r a` | Assign a number to a variable 
+.        | c()                    | x=c(1,2,3)    | `r x=c(1,2,3)` `r x` | Assign multiple numbers to a variable 
 =| == | a==7 | FALSE | Logical statement "a is ewual to 7"        
 - | -  | x-1 | `r minvb=x-1` `r minvb`| subtraction
 + | +  | x+1 | `r plusvb=x+1` `r plusvb` | addition
@@ -28,14 +28,14 @@ N | length()  | length(x) | `r nvb=length(x)` `r nvb` | returns the lenght of a 
 $\sum$ | sum() | sum(x) | `r sumvb=sum(x)` `r sumvb` | adds all numbers in a vector
 $s^2$ | var() | var(x) | `r var(x)` | returns the variance of a vector
 $s$ | sd() | sd(x) | `r sd(x)` | returns the standard deviation of a vector
- | cbind() | cbind(x,a,b=x-a) | see below | combines multiple vectors
-    |visualize.t() |visualize.t(2,16,"upper") | see below | visualizes the right sided $p$-value for t>2 with 16 degrees of freedom 
-     | |visualize.t(2,16,"lower") | | and the left sided $p$-value
-      | |visualize.t(c(-2,2),16,"tails") | | and two sided $p$-value
-     | visualize.chisq()| visualize.chisq(4,1,"upper")| | visualizes the right sided $p$-value for $\chi^2$>4 with 1 degree of freedom 
-     |visualize.f() | visualize.f(3,2,10,"upper") | | visualizes the right sided $p$-value for F>3 with df(2,10)
-     | subset() | subset(p,group==1)$y | | returns the scores on y for group one from data frame p
-     | ls() | ls() |"a" "x" | shows all variables stored in memory
+. | cbind() | cbind(x,a,b=x-a) | see below | combines multiple vectors
+.    |visualize.t() |visualize.t(2,16,"upper") | see below | visualizes the right sided $p$-value for t>2 with 16 degrees of freedom 
+.     | |visualize.t(2,16,"lower") | . | and the left sided $p$-value
+.      | |visualize.t(c(-2,2),16,"tails") | . | and two sided $p$-value
+.     | visualize.chisq()| visualize.chisq(4,1,"upper")| . | visualizes the right sided $p$-value for $\chi^2$>4 with 1 degree of freedom 
+.     |visualize.f() | visualize.f(3,2,10,"upper") | . | visualizes the right sided $p$-value for F>3 with df(2,10)
+.     | subset() | subset(p,group==1)$y | . | returns the scores on y for group one from data frame p
+.     | ls() | ls() |"a" "x" | shows all variables stored in memory
  
 
 ## cbind
