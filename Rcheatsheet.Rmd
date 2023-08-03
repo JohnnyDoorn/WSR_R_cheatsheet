@@ -3,9 +3,9 @@ title: "R Cheatsheet for SSR"
 author: "Klinkenberg"
 date: "4 sep 2019"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
-  pdf_document: default
 ---
 
 R can be used to do all kind of calculations and store the results in so called variables. Below you will find a list of most used statistical functions that will be used in this course. For every function an example will be given. The variables "a" and "x" are created in the first two examples and will be used in the following examples.
@@ -14,8 +14,8 @@ R can be used to do all kind of calculations and store the results in so called 
 
 Symbol                    | R                                                   | Example                         | Result | Explanation
 ------------------------ | ------------------------- | --------------------------------     | --------------------  | -----------------
-.  | =                   | a=9 | `r a=9` `r a` | Assign a number to a variable 
-.        | c()                    | x=c(1,2,3)    | `r x=c(1,2,3)` `r x` | Assign multiple numbers to a variable 
+.  | <-                   | a<-9 | `r a=9` `r a` | Assign a number to a variable 
+.        | c()                    | x<-c(1,2,3)    | `r x<-c(1,2,3)` `r x` | Assign multiple numbers to a variable 
 =| == | a==7 | FALSE | Logical statement "a is equal to 7"        
 - | -  | x-1 | `r minvb=x-1` `r minvb`| subtraction
 + | +  | x+1 | `r plusvb=x+1` `r plusvb` | addition
@@ -43,7 +43,7 @@ $s$ | sd() | sd(x) | `r sd(x)` | returns the standard deviation of a vector
 Result of cbind(x,a,b=x-a)
 
 ```{r,echo=FALSE} 
-cbind(x,a,b=x-a)
+cbind(x, a, b=x-a)
 ```
 
 ## Visualize
@@ -59,7 +59,7 @@ library("visualize");
 
 ```{r,echo=TRUE,message=FALSE, warning=FALSE}
 library(visualize);
-visualize.t(2,16,"upper");
+visualize.t(stat = 2, df = 16, section = "upper");
 ```
 
 ## Examples
@@ -68,10 +68,10 @@ visualize.t(2,16,"upper");
 
 
 ```{r}
-x1=c(5,3,7,4);
-x2=c(7,6,6,4);
-a=2;
-b=c(1,2);
+x1 <- c(5,3,7,4);
+x2 <- c(7,6,6,4);
+a <- 2;
+b <- c(1,2);
 
 ```
 
@@ -80,15 +80,15 @@ b=c(1,2);
 Variables with the same length can be be subtracted, added, multiplied e.g. Below the number assigned tho variable `x2` is subtracted from the number assigned to `x1`.
 
 ```{r}
-x1-x2 
+x1 - x2 
 ```
 
 When variable of different length are used for multiplications, the shortest variable will be repeated.
 
 ```{r}
-x1-a;
-cbind(x1,a)
-x1-b;
-cbind(x1,b);
+x1 - a;
+cbind(x1, a)
+x1 - b;
+cbind(x1, b)
 ```
 
