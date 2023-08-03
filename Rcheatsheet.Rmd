@@ -1,7 +1,7 @@
 ---
 title: "R Cheatsheet for SSR"
-author: "Klinkenberg"
-date: "4 sep 2019"
+author: "SH & JvD"
+date: "01/09/2023"
 output:
   pdf_document: default
   html_document:
@@ -14,7 +14,7 @@ R can be used to do all kind of calculations and store the results in so called 
 
 Symbol                    | R                                                   | Example                         | Result | Explanation
 ------------------------ | ------------------------- | --------------------------------     | --------------------  | -----------------
-.  | <-                   | a<-9 | `r a=9` `r a` | Assign a number to a variable 
+.  | <-                   | a <- 9 | `r a<-9` `r a` | Assign a number to a variable 
 .        | c()                    | x<-c(1,2,3)    | `r x<-c(1,2,3)` `r x` | Assign multiple numbers to a variable 
 =| == | a==7 | FALSE | Logical statement "a is equal to 7"        
 - | -  | x-1 | `r minvb=x-1` `r minvb`| subtraction
